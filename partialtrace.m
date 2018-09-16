@@ -3,7 +3,7 @@ function rho = partialtrace(p,sys,dim)
 % TRX   Partial trace
 % requires: nothing
 % author: Toby Cubitt
-% modified (superficially): T. Mainiero
+% modified (superficially): T. Mainiero (TM)
 % license: GPL2
 %
 %    RHO = partialtrace(PSI,SYS,DIM) traces out the subsystems specified in

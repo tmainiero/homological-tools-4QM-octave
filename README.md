@@ -1,3 +1,5 @@
+License: GPLv2 or later
+
 #Quickstart: Octave Cohomological Toolbox for the Quantum Mechanic
 
 
@@ -32,3 +34,6 @@ The (unnormalized) GHZ density state given by (|00....0> + |11...1>)(<00...0| + 
 
 
 -'dims' is an optional dimension vector of length N of the ambient system: assumed to be a list of 2's when empty.
+
+#Acknowledgements:
+Basic linear algebraic operations: partialtrace.m, tensor.m, and syspermute.m are taken from Toby Cubitt's Matlab software (c.f. http://www.dr-qubit.org/matlab.html) licensed under GPLv2.
