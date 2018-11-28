@@ -17,8 +17,8 @@ function [Z,Im,Op_basis_2]=kerim(func_type,psi,N,n,varargin)
 %basis for the nth chain group.
 
 if func_type==0
-  functor = @GNSfunctor;
-  cobdry = @GNScobdry;
+  functor = @gnsfunctor;
+  cobdry = @gnscobdry;
 elseif func_type==1
   functor = @comfunctor;
   cobdry = @ecobdry;
