@@ -1,6 +1,6 @@
 License: GPLv2 or later
 
-#Quickstart: Octave Cohomological Toolbox for the Quantum Mechanic
+# Quickstart: Octave Cohomological Toolbox for the Quantum Mechanic
 
 1. `gnscohomrk(psi,N,dims)`
 
@@ -49,5 +49,5 @@ Returns the kronecker product of its arguments.  To produce the state psi = |01>
 
 This function is taken from Toby Cubitt.
 
-#Acknowledgements:
+# Acknowledgements:
 Basic linear algebraic operations: partialtrace.m, tensor.m, and syspermute.m are taken from Toby Cubitt's Matlab software (c.f. http://www.dr-qubit.org/matlab.html) licensed under GPLv2.
