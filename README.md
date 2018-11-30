@@ -1,7 +1,30 @@
-License: GPLv2 or later
+# Octave Cohomological Toolbox for the Quantum Mechanic
 
-# Quickstart: Octave Cohomological Toolbox for the Quantum Mechanic
+## License: GPLv2 or later
 
+## How to Download
+
+### Git
+
+#### For just the Octave Software
+
+`git clone https://github.com/tmainiero/homological_toolbox_software/tree/master/Octave`
+
+#### For both the Mathematica and Octave Software:
+
+`git clone https://github.com/tmainiero/homological_toolbox_software`
+
+### File by File
+
+#### From the Github web interface:
+1. Go to the file you want to download and click it to view the contents
+2. Locate the "Raw" button (On the top right at the time of writing) and right click.
+3. Save as...
+
+
+# Descriptions of Basic Functions
+
+## To compute a list of ranks of cohomology groups
 1. `gnscohomrk(psi,N,dims)`
 
 2. `ecohomrk(psi,N,dims)`
@@ -19,7 +42,7 @@ where H^(i) is the rank of the ith GNS/commutant complex.  This is equivalently 
 
 The inputs `psi`, `N`, and `dims` must be sensible, i.e. psi must be able to be represented as an honest N-partite (density) state on primitive subsystems with dimension vector [d_1,...d_N].  That is to be written as an 1 x 2^(N) vector or a 2^(N) x 2^(N) (square matrix) if `dims` is empty, or a length d_1d_2...d_N row vector (square matrix) if `dims=[d_1, ..., d_N]`.
 
----
+## Basic State Manipulation
 
 `ket(basis,dims)`
 
@@ -34,6 +57,17 @@ Ket vector given the standard computational basis on a multipartite system: outp
 `ghz(N,dims)`
 
 The (unnormalized) GHZ density state given by (|00....0> + |11...1>)(<00...0| + <11..1|) for an N-partite qubit system.  (This is an unnormalized density state associated to the Bell state |00> + |11> when N=2).
+
+-`N` is the number of primitive subsystems.
+
+
+-`dims` is an optional dimension vector of length N of the ambient system: assumed to be a list of 2's when empty.
+
+---
+
+`wst(N,dims)`
+
+The (unnormalized) W density state given by (|0....01> + |0...10> + ...+ |1...0>)(<|0....01| + <0...10| + ...+ <1...0|) for an N-partite qubit system.  (This is an unnormalized density state associated to the Bell state |01> + |10> when N=2).
 
 -`N` is the number of primitive subsystems.
 
