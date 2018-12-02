@@ -2,17 +2,13 @@
 
 ## License: GPLv2 or later
 
+## Description
+
 ## How to Download
 
 ### Git
 
-#### For just the Octave Software
-
-`git clone https://github.com/tmainiero/homological_toolbox_software/tree/master/Octave`
-
-#### For both the Mathematica and Octave Software:
-
-`git clone https://github.com/tmainiero/homological_toolbox_software`
+`git clone https://github.com/tmainiero/homological-tools-4QM-octave.git`
 
 ### File by File
 
