@@ -4,6 +4,8 @@
 
 ## Description
 
+This is a set of Octave functions built to compute the cohomology of the cochain complexes introduced in the paper 'A Homological Toolkit for the Quantum Mechanic.'
+
 ## How to Download
 
 ### Git
