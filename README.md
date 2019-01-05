@@ -5,7 +5,7 @@
 
 ## Description
 
-This is a set of Octave functions built to compute the cohomology of the cochain complexes introduced in the paper 'A Homological Toolkit for the Quantum Mechanic.'
+This is a set of Octave functions built to compute the cohomology of the cochain complexes introduced in the paper 'Homological Tools for the Quantum Mechanic'.
 
 ## How to Download
 
@@ -37,17 +37,17 @@ where H^(i) is the rank of the ith GNS/commutant complex.  This is equivalently 
 
   * `N` is the number of tensor factors/primitive subsystems (the "partiteness").
 
-  * `dims` is an optional argument giving the *dimension vector*: the list of dimensions of Hilbert spaces at the tensor factors.  Must be a vector of length N.  If this is left empty, it will be assumed all subsystems are dimension 2.
+  * `dims` is an optional argument giving the *dimension vector*: the list of dimensions of Hilbert spaces at the tensor factors. It must be a vector of length N.  If this argument is left empty, it will be assumed all subsystems are dimension 2.
 
-The inputs `psi`, `N`, and `dims` must be sensible, i.e. psi must be able to be represented as an honest N-partite (density) state on primitive subsystems with dimension vector [d_1,...d_N].  That is to be written as an 1 x 2^(N) vector or a 2^(N) x 2^(N) (square matrix) if `dims` is empty, or a length d_1d_2...d_N row vector (square matrix) if `dims=[d_1, ..., d_N]`.
+The inputs `psi`, `N`, and `dims` must be sensible, i.e. psi must be able to be represented as an honest N-partite (density) state on primitive subsystems with dimension vector [d_1,...d_N]: i.e. if `dims` is empty: it must be written as either an 1 x 2^(N) (row) vector or a 2^(N) x 2^(N) square matrix; if `dims=[d_1, ..., d_N]`, then it must be a length d_1d_2...d_N row vector or a d_1d_2...d_N square matrix.
 
 ## Basic State Manipulation
 
 `ket(basis,dims)`
 
-Ket vector given the standard computational basis on a multipartite system: outputs the vector |basis(1)> \otimes |basis(2)> \otimes \cdots \otimes |basis(n)> = |basis(1) ... basis(n)>. Output is a row vector in Octave.
+Ket vector given the standard computational basis on a multipartite system: outputs the vector |basis(1)> \otimes |basis(2)> \otimes \cdots \otimes |basis(n)> = |basis(1) ... basis(N)>. Output is a row vector in Octave.
 
-  * `dims` is an optional row vector specifying the Hilbert space dimension of each primitive subsystem. If left empty it is assumed that there are length(basis) subsystems of dimension 2. 
+  * `dims` is an optional row vector specifying the Hilbert space dimension of each primitive subsystem. If this argument is left empty it is assumed that there are N (= length of `basis`) subsystems of dimension 2. 
 
   * `basis` is a list of non-negative integers [b_1,b_2,...b_N], where b_i runs from 0 to dims(i) - 1.  Here b_k represents the standard basis element |b_i> of \mathbb{C}^(dims(i))  with a 1 in the (d_k - 1)^(th) position, and zeros elsewhere.
 
