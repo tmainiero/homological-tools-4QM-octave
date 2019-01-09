@@ -7,6 +7,8 @@
 
 This is a set of Octave functions built to compute the cohomology of the cochain complexes introduced in the paper 'Homological Tools for the Quantum Mechanic' ([arXiv:1901.02011](https://arxiv.org/abs/1901.02011)).
 
+For software that can compute ranks and explicit bases of cohomology components in Mathematica, see: <https://github.com/tmainiero/homological-tools-4QM-mathematica>.
+
 ## How to Download
 
 ### Git
