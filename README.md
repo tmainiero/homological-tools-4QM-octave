@@ -5,7 +5,7 @@
 
 ## Description
 
-This is a set of Octave functions built to compute the cohomology of the cochain complexes introduced in the paper 'Homological Tools for the Quantum Mechanic'.
+This is a set of Octave functions built to compute the cohomology of the cochain complexes introduced in the paper 'Homological Tools for the Quantum Mechanic' ([arXiv:1901.02011](https://arxiv.org/abs/1901.02011)).
 
 ## How to Download
 
