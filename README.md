@@ -15,6 +15,10 @@ For software that can compute ranks and explicit bases of cohomology components 
 
 `git clone https://github.com/tmainiero/homological-tools-4QM-octave.git`
 
+### From the Github web interface
+Click that fancy green "Clone or download" button on the top right!
+Then "Download ZIP".
+
 ### File by File
 
 #### From the Github web interface:
